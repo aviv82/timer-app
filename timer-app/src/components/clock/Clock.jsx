@@ -1,6 +1,6 @@
 import "./Clock.css";
 
-export const Clock = ({ sec }) => {
+export const Clock = (props) => {
   return (
     <div className="clock">
       <svg
@@ -17,7 +17,7 @@ export const Clock = ({ sec }) => {
         />
       </svg>
 
-      <h1>00:{sec}</h1>
+      <h1>00:{props.sec}</h1>
     </div>
   );
 };
